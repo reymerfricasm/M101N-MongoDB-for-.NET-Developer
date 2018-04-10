@@ -1,0 +1,2 @@
+C:\Users\Reymer Fricas\Documents\Courses\M101N MongoDB for .NET Developer\Week 3\week_3_schema_design\blog-week-3-m101n\3.2\src\M101DotNet.WebApp\obj\Debug\M101DotNet.WebApp.csprojResolveAssemblyReference.cache
+C:\Users\Reymer Fricas\Documents\Courses\M101N MongoDB for .NET Developer\Week 3\week_3_schema_design\blog-week-3-m101n\3.2\src\M101DotNet.WebApp\obj\Debug\M101DotNet.WebApp.csproj.CoreCompileInputs.cache

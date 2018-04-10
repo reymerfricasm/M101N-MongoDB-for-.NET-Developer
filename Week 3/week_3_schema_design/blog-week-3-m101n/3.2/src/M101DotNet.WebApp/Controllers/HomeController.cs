@@ -20,6 +20,7 @@ namespace M101DotNet.WebApp.Controllers
             // XXX WORK HERE
             // find the most recent 10 posts and order them
             // from newest to oldest
+            var recentPosts = new List<Post>();
 
             var model = new IndexModel
             {
@@ -44,8 +45,16 @@ namespace M101DotNet.WebApp.Controllers
             }
 
             var blogContext = new BlogContext();
-            // XXX WORK HERE
-            // Insert the post into the posts collection
+
+            var post = new Post()
+            {
+                Title = model.Title,
+                Content = model.Content,
+                Tags = model.Tags
+            };
+
+            await blogContext.Posts.InsertOneAsync(post);
+
             return RedirectToAction("Post", new { id = post.Id });
         }
 
@@ -55,7 +64,10 @@ namespace M101DotNet.WebApp.Controllers
             var blogContext = new BlogContext();
 
             // XXX WORK HERE
-            // Find the post with the given identifier
+            var post = new Post()
+            {
+
+            };
 
             if (post == null)
             {
@@ -74,6 +86,10 @@ namespace M101DotNet.WebApp.Controllers
         public async Task<ActionResult> Posts(string tag = null)
         {
             var blogContext = new BlogContext();
+            var post = new Post()
+            {
+
+            };
 
             // XXX WORK HERE
             // Find all the posts with the given tag if it exists.
